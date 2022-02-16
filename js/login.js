@@ -17,7 +17,8 @@ document.getElementById("login-submit").addEventListener("click", (e) => {
 });
 
 function redirectToBanking(email, password) {
-  const url = window.location.origin;
+  // const url = window.location.origin;
+  const url = window.location.pathname;
 
   if (email == auth.email && password == auth.password) {
     window.location.href = `${url}/banking.html`;
